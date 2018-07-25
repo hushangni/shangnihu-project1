@@ -6,7 +6,66 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* croccodiles open their mouths sometimes, skull is so thick, in the heat if they sat around and waited for prey, they would cook their brains, so they keep their mouths open to air out their brains - Asaf */
 
-/* Custome styles start here ************* */
+/* Custom styles start here ************* */
 *{
     border: 1px solid peachpuff;
 }
+
+html {
+    font-size: 62.5%; /* base font 10px */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h3,
+h5,
+.phoneNumber {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    display: inline;
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+.wrapper {
+    width: 62%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+
+
+
+/* HOME STYLES ************************** */
+.mainHeader {
+    height: 100vh;
+}
+
+.topNav {
+    height: 14vh;
+}
+
+.topNavItems {
+    text-align: center;
+}
+
+.homeHeaderImg {
+    height: 86vh;
+    background-image: url(assets/home-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
