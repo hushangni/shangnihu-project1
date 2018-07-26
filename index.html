@@ -21,7 +21,7 @@
             <div class="wrapper">
                 <ul class="topNavItems">
                     <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
+                    <li><a href="#aboutSection">about</a></li>
                     <li><a href="#">reserve</a></li>
 
                     <li><a href="#"><h1 class="logo">Sunshine</h1></a></li>
@@ -44,7 +44,7 @@
     <!-- MAIN -->
     <main>
         <!-- ABOUT SECTION -->
-        <section class="aboutSection">
+        <section class="aboutSection" id="aboutSection">
             <div class="wrapper">
                 <h2>a little about us</h2>
                 <div class="aboutContent">
@@ -123,7 +123,13 @@
             <!-- TESTIMONIALS SECTION -->
             <section class="testimonialsSection">
                 <div class="wrapper">
-                    <div class="testimonialContainer">
+                    <div class="testimonialContainer box">
+                        <div class="rightAngle angle">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <div class="leftAngle angle">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
                         <h2>testimonial</h2>
                         <h3>What Clients Say</h3>
 
@@ -145,19 +151,22 @@
             <!-- EXPLORE SECTION-->
             <section class="exploreSection">
                 <div class="wrapper">
+                    <h2>explore</h2>
                     <h3>Gallery</h3>
-                    <img src="assets/home-4.jpeg" class="galleryImage" alt="Banana leaves">
-                    <img src="assets/home-5.jpeg" class="galleryImage" alt="Woman floating across light blue ocean">
-                    <img src="assets/home-6.jpeg" class="galleryImage" alt="Circular rolling wave">
-                    <img src="assets/home-7.jpeg" class="galleryImage" alt="Wooden boardwalk lounge area with 2 palm trees">
-                    <img src="assets/home-8.jpeg" class="galleryImage" alt="Suitcase with a hat, sunscreen, and a camera">
-                    <img src="assets/home-9.jpeg" class="galleryImage" alt="A sillouette standing in front of a waterfall">
+                    <div class="imgGalleryContainer clearfix">
+                        <img src="assets/home-4.jpeg" class="galleryImage box" alt="Banana leaves">
+                        <img src="assets/home-5.jpeg" class="galleryImage box" alt="Woman floating across light blue ocean">
+                        <img src="assets/home-6.jpeg" class="galleryImage box" alt="Circular rolling wave">
+                        <img src="assets/home-7.jpeg" class="galleryImage box" alt="Wooden boardwalk lounge area with 2 palm trees">
+                        <img src="assets/home-8.jpeg" class="galleryImage box" alt="Suitcase with a hat, sunscreen, and a camera">
+                        <img src="assets/home-9.jpeg" class="galleryImage box" alt="A sillouette standing in front of a waterfall">
+                    </div>
                 </div>
             </section><!-- EXPLORE SECTION END -->
         </div>
 
         <!-- INFORMATION SECTION -->
-        <section class="infoSection">
+        <section class="infoSection clearfix">
             <img src="assets/home-10.jpeg" class="infoImage" alt="Overhead shot of a peach shaped ocean pool with palm trees lining the edges">
             <div class="wrapper">
                 <h2>information</h2>

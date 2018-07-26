@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* Custom styles start here ************* */
 *{
-    /* border: 1px solid peachpuff; */
+    border: 1px solid peachpuff;
 }
 
 html {
@@ -32,6 +32,8 @@ h2 {
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 0.8em;
+    color: #999;
+    font-weight: 400;
 }
 
 h3 {
@@ -69,6 +71,17 @@ ul {
 
 li {
     display: inline;
+}
+
+.box {
+    transition: 0.4s;
+}
+
+.box:hover {
+    box-shadow: 2px 4px 4px 2px #aaa;
+    -webkit-box-shadow: 2px 4px 4px 2px #aaa;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 4px 4px 2px #aaa;
+    transform: scale(1.02, 1.02);
 }
 
 
@@ -151,7 +164,6 @@ li {
     text-align: center;
     margin-bottom: 7%;
     font-weight: 400;
-    color: #999;
 }
 
 .contentImages {
@@ -238,3 +250,95 @@ li {
     width: 80%;
 }
 
+/* HOME TEXT EXPLORE STYLES ************************** */
+.testExploreWrapper {
+    background: url(assets/pattern.png);
+}
+
+.testimonialsSection {
+    height: 100vh;
+    padding-top: 9%;
+}
+
+.testimonialContainer {
+    background-color: #fff;
+    padding: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.testimonialContainer h3 {
+    margin-top: 3%;
+}
+
+.testimonialContainer blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 1.9em;
+}
+
+.stars {
+    margin-bottom: 5%;
+}
+
+.stars i {
+    color: #f9cb3e;
+}
+
+.tripAdvisor {
+    color: #000;
+}
+
+.angle {
+    position: absolute;
+    cursor: pointer;
+}
+
+.angle:hover {
+    color: #999;
+}
+
+.angle i {
+    font-size: 2.5em;
+}
+
+.leftAngle {
+    top: 50%;
+    left: -5%;
+}
+
+.rightAngle {
+    top: 50%;
+    right: -5%;
+}
+
+.exploreSection {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.exploreSection h3 {
+    margin-top: 3%;
+}
+
+.imgGalleryContainer {
+    width: 100%;
+    padding-bottom: 13%;
+}
+
+.imgGalleryContainer img {
+    width: 31%;
+    margin: 1%;
+}
+
+/* HOME INFO STYLES ************************** */
+.infoSection img {
+    width: 60%;
+    float: left;
+}
+
+.infoSection .wrapper {
+    float: left;
+    width: 40%;
+}
