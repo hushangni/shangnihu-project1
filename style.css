@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* Custom styles start here ************* */
 *{
-    border: 1px solid peachpuff;
+    /* border: 1px solid peachpuff; */
 }
 
 html {
@@ -341,4 +341,33 @@ li {
 .infoSection .wrapper {
     float: left;
     width: 40%;
+    padding-left: 6%;
+    padding-top: 5%;
 }
+
+.infoSection .wrapper h3 {
+    margin-top: 5%;
+}
+
+.address h5 {
+    font-size: 2.1em;
+    margin: 4% 0;
+}
+
+.hawaii {
+    color: #999;
+}
+
+.email {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 700;
+}
+
+.phoneNumber {
+    color: #000;
+    font-size: 3.3em;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
