@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* Custom styles start here ************* */
 *{
-    border: 1px solid peachpuff;
+    /* border: 1px solid peachpuff; */
 }
 
 html {
@@ -25,15 +25,40 @@ h5,
 
 h1 {
     display: inline;
-    font-size: 5rem;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #999;
+    line-height: 2em;
+}
+
+strong {
+    color: #000;
 }
 
 .wrapper {
-    width: 62%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -47,25 +72,169 @@ li {
 }
 
 
-
-
 /* HOME STYLES ************************** */
 .mainHeader {
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .topNav {
-    height: 14vh;
+    height: 15vh;
 }
 
 .topNavItems {
     text-align: center;
+    display: table;
+    width: 100%;
+    margin: 0;
+    height: 15vh;
 }
 
 .homeHeaderImg {
-    height: 86vh;
+    height: 85vh;
     background-image: url(assets/home-1.jpeg);
     background-size: cover;
     background-position: center;
+}
+
+.topNavItems a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.topNavItems a:hover {
+    color: #999;
+}
+
+.topNavItems li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo {
+    margin: 0 15%;
+    text-transform: capitalize;
+}
+
+.logo:hover {
+    color: #f7d40e;
+}
+
+.fa-search {
+    margin-right: 30%;
+}
+
+.shopping {
+    position: relative;
+}
+
+.purchaseNumber {
+    border-radius: 50%;
+    background-color:  #a4f1dc;
+    font-size: 0.7em;
+    width: 11.5px;
+    height: 11.5px;
+    position: absolute;
+    top: 54%;
+    right: 0;
+}
+
+/* HOME ABOUT STYLES ************************** */
+.aboutSection {
+    background-color: #ededed;
+    padding-top: 8%;
+    height: 100vh;
+}
+
+.aboutSection h2 {
+    text-align: center;
+    margin-bottom: 7%;
+    font-weight: 400;
+    color: #999;
+}
+
+.contentImages {
+    position: relative;
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.contentImages img:first-child {
+    max-width: 100%;
+    border: 14px solid white;
+}
+
+.contentImages img:last-child {
+    position: absolute;
+    width: 55%;
+    left: -25%;
+    bottom: -23%;
+}
+
+.contentText {
+    margin-left: 5%;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.shortBlackLine{
+    width: 15%;
+    float: left;
+}
+
+/* HOME ITEMS STYLES ************************** */
+.itemsSection {
+    max-height: 90vh;
+    position: relative;
+}
+
+.itemsList {
+    float: left;
+    width: 70%;
+    height: 90vh;
+    margin: 0;
+    padding-top: 9%;
+    padding-right: 10%;
+    padding-left: 1%;
+}
+
+.itemsList li {
+    width: 50%;
+    float: left;
+    margin-top: 5%;
+}
+
+.itemsSection img {
+    float: right;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.itemsList i {
+    float: left;
+    width: 10%;
+    font-size: 2.2em;
+    margin-right: 5%;
+}
+
+.itemsText h4,
+.itemsText p {
+    margin: 0;
+    padding-bottom: 1em;
+    line-height: 1.6em;
+}
+
+.itemsText p {
+    font-size: 1.1em;
+}
+
+.itemsText {
+    float: left;
+    width: 80%;
 }
 
