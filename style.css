@@ -90,8 +90,7 @@ li {
     transform: scale(1.02, 1.02);
 }
 
-
-/* HOME STYLES ************************** */
+/* HEADER STYLES ********************* */
 .mainHeader {
     max-height: 100vh;
 }
@@ -106,13 +105,6 @@ li {
     width: 100%;
     margin: 0;
     height: 15vh;
-}
-
-.homeHeaderImg {
-    height: 85vh;
-    background-image: url(assets/home-1.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .topNavItems a {
@@ -158,6 +150,25 @@ li {
     top: 54%;
     right: 0;
 }
+
+
+
+
+/* HEADER  IMAGES*********************************/
+.homeHeaderImg {
+    height: 85vh;
+    background-image: url(assets/home-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contactHeaderImg {
+    height: 60vh;
+    background-image: url(assets/contact-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* HOME ABOUT STYLES ************************** */
 .aboutSection {
@@ -378,7 +389,115 @@ li {
     margin-top: 15px;;
 }
 
-/* HOME FOOTER STYLES ************************** */
+/* * {
+    border: 1px solid red;
+} */
+
+/* CONTACT STYLES ********************** */
+.contactDetails h3 {
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.method {
+    float: left;
+    margin: 15px;
+    width: calc((100% / 3) - 30px);
+    min-height: 220px;
+    padding-top: 45px;
+    padding-left: 50px
+}
+
+.method:nth-child(2),
+.method:last-child {
+    border-left: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.method i {
+    font-size: 2.8rem;
+}
+
+.method h5 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.method p {
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.getInTouch {
+    margin-bottom: 40px;
+}
+
+.getInTouch h3 {
+    margin-bottom: 20px;
+}
+
+.getInTouch p {
+    margin-bottom: 80px;
+}
+
+textarea {
+    margin-top: 40px;
+    width: 100%;
+    resize: none;
+    font-size: 1.2rem;
+}
+
+.topForm input {
+    margin-right: 25px;
+    width: calc((100%/3) - 50px);
+    padding-bottom: 7px;
+    font-size: 1.2rem;
+}
+
+.topForm input:last-child {
+    margin-right: 0;
+    width: calc((100%/3) + 25px);
+}
+
+.getInTouchForm textArea,
+.topForm * {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.middleEmail {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.middleEmail::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+
+.inTouchButton {
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+.inTouchButton:hover {
+    padding-right: 50px;
+}
+
+
+/* FOOTER STYLES ************************** */
 footer {
     background-color: #212020;
     color: #999;
@@ -481,4 +600,3 @@ footer a {
 .socialIcons i:hover {
     transform: scale(1.25, 1.25);
 }
-
