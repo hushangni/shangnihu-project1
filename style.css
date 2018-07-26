@@ -12,8 +12,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 
 html {
-    font-size: 62.5%; /* base font 10px */
+    font-size: 64%; /* base font 10px */
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1,
@@ -61,6 +65,8 @@ strong {
 
 .wrapper {
     width: 65%;
+    max-width: 1080px;
+
     margin: 0 auto;
 }
 
@@ -110,10 +116,10 @@ li {
 }
 
 .topNavItems a {
-    text-decoration: none;
     color: #000;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 0.1rem;
 }
 
 .topNavItems a:hover {
@@ -126,7 +132,7 @@ li {
 }
 
 .logo {
-    margin: 0 15%;
+    margin: 0 20px;
     text-transform: capitalize;
 }
 
@@ -135,7 +141,7 @@ li {
 }
 
 .fa-search {
-    margin-right: 30%;
+    margin-right: 15px;
 }
 
 .shopping {
@@ -156,25 +162,25 @@ li {
 /* HOME ABOUT STYLES ************************** */
 .aboutSection {
     background-color: #ededed;
-    padding-top: 6%;
+    padding-top: 80px;
     height: 100vh;
 }
 
 .aboutSection h2 {
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 60px;
     font-weight: 400;
 }
 
 .contentImages {
     position: relative;
     float: left;
-    width: 40%;
-    margin-right: 5%;
+    width: calc(45% - 40px);
+    margin-right: 40px;
 }
 
 .contentImages img:first-child {
-    max-width: 100%;
+    width: 100%;
     border: 14px solid white;
 }
 
@@ -186,8 +192,8 @@ li {
 }
 
 .contentText {
-    margin-left: 5%;
-    width: 50%;
+    margin-left: 40px;
+    width: calc(55% - 40px);
     float: left;
     text-align: left;
 }
@@ -208,15 +214,16 @@ li {
     width: 70%;
     height: 90vh;
     margin: 0;
-    padding-top: 9%;
-    padding-right: 10%;
-    padding-left: 1%;
+    padding-top: 100px;
+    padding-right: 80px;
 }
 
 .itemsList li {
     width: 50%;
     float: left;
-    margin-top: 5%;
+    margin-top: 20px;
+    min-height: 110px;
+    padding: 2px;
 }
 
 .itemsSection img {
@@ -229,9 +236,9 @@ li {
 
 .itemsList i {
     float: left;
-    width: 10%;
+    width: calc(10% - 30px);
     font-size: 2.2em;
-    margin-right: 5%;
+    margin-right: 30px;
 }
 
 .itemsText h4,
@@ -257,7 +264,7 @@ li {
 
 .testimonialsSection {
     height: 100vh;
-    padding-top: 9%;
+    padding-top: 110px;
 }
 
 .testimonialContainer {
@@ -268,7 +275,7 @@ li {
 }
 
 .testimonialContainer h3 {
-    margin-top: 3%;
+    margin-top: 18px;
 }
 
 .testimonialContainer blockquote {
@@ -279,7 +286,7 @@ li {
 }
 
 .stars {
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 
 .stars i {
@@ -315,21 +322,21 @@ li {
 
 .exploreSection {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 0;
 }
 
 .exploreSection h3 {
-    margin-top: 3%;
+    margin-top: 20px;
 }
 
 .imgGalleryContainer {
     width: 100%;
-    padding-bottom: 13%;
+    padding-bottom: 100px;
 }
 
 .imgGalleryContainer img {
-    width: 31%;
-    margin: 1%;
+    width: calc((99% / 3) - 16px);
+    margin: 8px;
 }
 
 /* HOME INFO STYLES ************************** */
@@ -341,12 +348,12 @@ li {
 .infoSection .wrapper {
     float: left;
     width: 40%;
-    padding-left: 6%;
-    padding-top: 5%;
+    padding-left: 70px;
+    padding-top: 70px;
 }
 
 .infoSection .wrapper h3 {
-    margin-top: 5%;
+    margin-top: 20px;;
 }
 
 .address h5 {
@@ -355,7 +362,7 @@ li {
 }
 
 .hawaii {
-    color: #999;
+    color: #ccc;
 }
 
 .email {
@@ -368,6 +375,110 @@ li {
     color: #000;
     font-size: 3.3em;
     font-weight: 700;
-    margin-top: 2%;
+    margin-top: 15px;;
+}
+
+/* HOME FOOTER STYLES ************************** */
+footer {
+    background-color: #212020;
+    color: #999;
+    margin: 0;
+    padding: 40px;
+    padding-bottom: 25px;
+}
+
+footer a {
+    color: #999;
+}
+
+.leftBottomNav {
+    float: left;
+    margin-right: 10px;
+    width: calc(25% - 10px);
+}
+
+.centerBottomNav {
+    float: left;
+    margin-right: 0;
+    width: 25%;
+
+}
+
+
+.newsletter {
+    float: right;
+    width: calc(50% - 20px);
+}
+
+.leftBottomNav  li,
+.centerBottomNav li{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.leftBottomNav a:hover,
+.centerBottomNav a:hover,
+.emailBar a:hover {
+    color: #fff;
+}
+
+.emailBar {
+    position: relative;
+}
+
+.emailBar input[type="email"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 100%;
+    padding-bottom: 6px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.emailBar a{
+    position: absolute;
+    right: 1%;
+    font-size: 1.1rem;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.footerHr {
+    border: none;
+    height: 1px;
+    color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 30px 0;
+}
+
+.copyright {
+    float: left;
+}
+
+.copyrightText {
+    margin: 0;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.socialIcons {
+    float: right;
+}
+
+.socialIcons a {
+    line-height: 1.2rem;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.socialIcons i:hover {
+    transform: scale(1.25, 1.25);
 }
 
