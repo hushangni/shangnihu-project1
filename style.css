@@ -592,6 +592,57 @@ textarea {
     margin-left: 90px;
 }
 
+.blogText {
+    margin: 40px 0 50px 0;
+}
+
+.blogText p {
+    margin: 25px 0;
+}
+
+.blogText p:first-child {
+    color: #000;
+}
+
+.blogPostShare * {
+    float: left;
+}
+
+.blogPostShare h5 {
+    margin: 0;
+}
+
+.blogPostShare ul {
+    margin: 4px 0 0 20px;
+}
+
+.blogPostShare li {
+    margin-right: 15px;
+}
+
+.blogPostShare i {
+    color: #999;
+    font-size: 1.5rem;
+}
+
+i.fa-twitter {
+    color: #0cf;
+}
+
+i.fa-instagram:hover {
+    color: #BE3B81;
+}
+
+i.fa-facebook-f:hover {
+    color: #4867AA;
+}
+
+i.fa-google-plus-g:hover {
+    color: #DA192A;
+}
+
+
+
 
 /* FOOTER STYLES ************************** */
 footer {
