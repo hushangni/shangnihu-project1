@@ -520,6 +520,13 @@ textarea {
     width: 90%;
 }
 
+.blogWrap {
+    background: #fff;
+    padding: 70px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .blogWrap h5 {
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -532,13 +539,6 @@ textarea {
 .blogPost h3 {
     margin: 0;
     margin-bottom: 40px;
-}
-
-.blogWrap {
-    background: #fff;
-    padding: 70px 0;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .blogPostHeader {
@@ -625,7 +625,7 @@ textarea {
     font-size: 1.5rem;
 }
 
-i.fa-twitter {
+.blogPostShare i.fa-twitter {
     color: #0cf;
 }
 
@@ -641,7 +641,11 @@ i.fa-google-plus-g:hover {
     color: #DA192A;
 }
 
-
+/* .continue::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f30b";
+} */
 
 
 /* FOOTER STYLES ************************** */
