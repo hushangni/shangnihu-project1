@@ -265,7 +265,7 @@ li {
     height: 90vh;
     margin: 0;
     padding-top: 100px;
-    padding-right: 80px;
+    padding-right: 40px;
 }
 
 .itemsList li {
@@ -274,6 +274,40 @@ li {
     margin-top: 20px;
     min-height: 110px;
     padding: 2px;
+    position: relative;
+}
+
+.itemsList li:before {
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-size: 2.5rem;
+    left: -40px;
+    font-weight: 700;
+}
+
+.itemsList li:nth-of-type(1)::before {
+    content: '\f185';
+}
+
+.itemsList li:nth-of-type(2)::before {
+    content: '\f2e7';
+}
+
+.itemsList li:nth-of-type(3)::before {
+    content: '\f072';
+    transform: rotate(-40deg);
+}
+
+.itemsList li:nth-of-type(4)::before {
+    content: '\f000';
+}
+
+.itemsList li:nth-of-type(5)::before {
+    content: '\f06c';
+}
+
+.itemsList li:nth-of-type(6)::before {
+    content: '\f0f3';
 }
 
 .itemsSection img {
@@ -282,13 +316,6 @@ li {
     position: absolute;
     top: 0;
     right: 0;
-}
-
-.itemsList i {
-    float: left;
-    width: calc(10% - 30px);
-    font-size: 2.2em;
-    margin-right: 30px;
 }
 
 .itemsText h4,
