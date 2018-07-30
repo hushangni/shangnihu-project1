@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* custom styles start here ***********/
 
 html {
-    font-size: 64%;
+    font-size: 75%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -335,6 +335,43 @@ li {
     line-height: 1.9em;
 }
 
+.carouselWrapper {
+    position: relative;
+    height: 80%;
+}
+
+.carouselItem{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}
+
+[id^="item"] {
+    display: none;
+}
+
+.item1 {
+    z-index: 2;
+    opacity: 1;
+}
+
+*:target ~ .item1 {
+    opacity: 0;
+}
+
+#item1:target ~ .item1 {
+    opacity: 1;
+}
+
+#item2:target ~ .item2, #item3:target ~ .item3 {
+    z-index: 3;
+    opacity: 1;
+}
+
 .stars {
     margin-bottom: 25px;
 }
@@ -352,7 +389,11 @@ li {
     cursor: pointer;
 }
 
-.angle:hover {
+.angle a {
+    color: #000;
+}
+
+.angle:hover a {
     color: #999;
 }
 
@@ -388,8 +429,6 @@ li {
 .galleryImage {
     width: 100%;
     display: block;
-    /* width: calc((99% / 3) - 16px); */
-    /* margin: 8px; */
 }
 
 .galleryImageOverlay {
@@ -1014,6 +1053,13 @@ footer a {
 
 .socialIcons i:hover {
     transform: scale(1.25, 1.25);
+}
+
+/* added media query for font size on larger screens */
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 64%;
+    }
 }
 
 @-ms-keyframes spin {
