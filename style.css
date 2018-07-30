@@ -67,6 +67,19 @@ li {
     display: inline;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .wrapper {
     width: 65%;
     max-width: 1080px;
@@ -151,6 +164,7 @@ li {
     background-image: url(assets/home-1.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .contactHeaderImg {
@@ -158,6 +172,7 @@ li {
     background-image: url(assets/contact-1.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .blogHeaderImg {
@@ -165,6 +180,7 @@ li {
     background-image: url(assets/blog-1.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* home styles *************************************/
@@ -457,7 +473,6 @@ textarea {
 .topForm input:focus,
 .getInTouchForm textarea:focus {
     outline: none;
-    color: rgba(0, 0, 0, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
@@ -690,10 +705,6 @@ i.fa-google-plus-g:hover {
   width: 100%;
 }
 
-.overlay-container img {
-    width: 100%;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -702,9 +713,13 @@ i.fa-google-plus-g:hover {
   right: 0;
   opacity: 0;
   width: 100%;
-  height: 98%;
   transition: .3s ease;
   background-color: rgba(200, 200, 200, 0.7);
+}
+
+.overlay-container img {
+    display: block;
+    width: 100%;
 }
 
 .overlay-container:hover .overlay {
@@ -725,7 +740,7 @@ i.fa-google-plus-g:hover {
 }
 
 .overlay-text .overlay-link:hover {
-    text-decoration: underline;
+    font-size: 1.7rem;
     color: white;
 }
 
@@ -744,25 +759,17 @@ i.fa-google-plus-g:hover {
     width: 9%;
 }
 
-.speechBubble {
-    position: relative;
-    border-radius: .4em;
-    background-color: #F2F2F4;
-    float: left;
-}
-
-.speechBubble::after {
+.commentText::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 10%;
     width: 0;
     height: 0;
     border: 25px solid transparent;
     border-width: 10px 30px 10px 0;
     border-right-color: #F2F2F4;
     border-left: 0;
-    margin-top: 19px;
     margin-left: -25px;
     float: left;
     z-index: 10;
