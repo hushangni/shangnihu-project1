@@ -4,25 +4,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* croccodiles open their mouths sometimes, skull is so thick, in the heat if they sat around and waited for prey, they would cook their brains, so they keep their mouths open to air out their brains - Asaf */
-
-/* Custom styles start here ************* */
-*{
-    /* border: 1px solid peachpuff; */
-}
-
-li::before {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-/* li:nth-child(1)::before {
-    content:'\fa02927';
-} */
+/* custom styles start here ***********/
 
 html {
-    font-size: 64%; /* base font 10px */
+    font-size: 64%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -73,12 +58,6 @@ strong {
     color: #000;
 }
 
-.wrapper {
-    width: 65%;
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -86,6 +65,12 @@ ul {
 
 li {
     display: inline;
+}
+
+.wrapper {
+    width: 65%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .box {
@@ -99,7 +84,7 @@ li {
     transform: scale(1.02, 1.02);
 }
 
-/* HEADER STYLES ********************* */
+/* header styles SAME FOR ALL PAGES ********************* */
 .mainHeader {
     max-height: 100vh;
 }
@@ -156,14 +141,11 @@ li {
     width: 11.5px;
     height: 11.5px;
     position: absolute;
-    top: 54%;
+    top: 52%;
     right: 0;
 }
 
-
-
-
-/* HEADER  IMAGES*********************************/
+/* header images *********************************/
 .homeHeaderImg {
     height: 85vh;
     background-image: url(assets/home-1.jpeg);
@@ -185,8 +167,8 @@ li {
     background-position: center;
 }
 
-
-/* HOME ABOUT STYLES ************************** */
+/* home styles *************************************/
+/* about */
 .aboutSection {
     background-color: #ededed;
     padding-top: 80px;
@@ -230,7 +212,7 @@ li {
     float: left;
 }
 
-/* HOME ITEMS STYLES ************************** */
+/* items */
 .itemsSection {
     max-height: 90vh;
     position: relative;
@@ -284,7 +266,7 @@ li {
     width: 80%;
 }
 
-/* HOME TEXT EXPLORE STYLES ************************** */
+/* testmonials */
 .testExploreWrapper {
     background: url(assets/pattern.png);
 }
@@ -347,6 +329,7 @@ li {
     right: -5%;
 }
 
+/* explore */
 .exploreSection {
     text-align: center;
     padding-top: 0;
@@ -366,7 +349,7 @@ li {
     margin: 8px;
 }
 
-/* HOME INFO STYLES ************************** */
+/* info */
 .infoSection img {
     width: 60%;
     float: left;
@@ -405,7 +388,8 @@ li {
     margin-top: 15px;;
 }
 
-/* CONTACT STYLES ********************** */
+/* contact styles *************************************/
+/* contact details */
 .contactDetails h3 {
     margin-bottom: 20px;
     margin-top: 70px;
@@ -443,6 +427,7 @@ li {
     font-size: 1.1rem;
 }
 
+/* get in touch */
 .getInTouch {
     margin-bottom: 40px;
 }
@@ -469,6 +454,18 @@ textarea {
     font-size: 1.2rem;
 }
 
+.topForm input:focus,
+.getInTouchForm textarea:focus {
+    outline: none;
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.topForm input:focus::placeholder,
+.getInTouchForm textarea:focus::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+
 .topForm input:last-child {
     margin-right: 0;
     width: calc((100%/3) + 25px);
@@ -482,11 +479,11 @@ textarea {
 }
 
 .middleEmail {
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 1); */
 }
 
 .middleEmail::placeholder {
-    color: rgba(0, 0, 0, 1);
+    /* color: rgba(0, 0, 0, 1); */
 }
 
 .inTouchButton {
@@ -508,6 +505,7 @@ textarea {
     padding-right: 50px;
 }
 
+/* contact footer image */
 .contactFooterImg {
     background-image: url(assets/contact-2.jpeg);
     background-size: cover;
@@ -515,7 +513,7 @@ textarea {
     height: 75vh;
 }
 
-/* BLOG STYLES ********************** */
+/* blog styles *************************************/
 .blogPost {
     background: #eee;
 }
@@ -543,6 +541,7 @@ textarea {
     margin-bottom: 40px;
 }
 
+/* post header */
 .blogPostHeader {
     text-align: center;
     margin-bottom: 70px;
@@ -563,6 +562,7 @@ textarea {
     color: #000;
 }
 
+/* author bar */
 .blogAuthorBar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     padding-bottom: 20px;
@@ -594,6 +594,7 @@ textarea {
     margin-left: 90px;
 }
 
+/* blog text */
 .blogText {
     margin: 40px 0 50px 0;
 }
@@ -606,6 +607,7 @@ textarea {
     color: #000;
 }
 
+/* blog share */
 .blogPostShare * {
     float: left;
 }
@@ -643,6 +645,7 @@ i.fa-google-plus-g:hover {
     color: #DA192A;
 }
 
+/* related posts */
 .relatedPosts {
     margin-top: 80px;
 }
@@ -726,6 +729,7 @@ i.fa-google-plus-g:hover {
     color: white;
 }
 
+/* comments */
 .comments {
     margin: 80px 0;
 }
@@ -745,7 +749,6 @@ i.fa-google-plus-g:hover {
     border-radius: .4em;
     background-color: #F2F2F4;
     float: left;
-
 }
 
 .speechBubble::after {
@@ -827,7 +830,7 @@ i.fa-google-plus-g:hover {
     color: #84a016;
 }
 
-/* FOOTER STYLES ************************** */
+/* footer styles SAME FOR ALL PAGES *********************8*/
 footer {
     background-color: #212020;
     color: #999;
@@ -840,6 +843,7 @@ footer a {
     color: #999;
 }
 
+/* main footer */
 .leftBottomNav {
     float: left;
     margin-right: 10px;
@@ -852,7 +856,6 @@ footer a {
     width: 25%;
 
 }
-
 
 .newsletter {
     float: right;
@@ -906,6 +909,7 @@ footer a {
     margin: 30px 0;
 }
 
+/* footer bottom */
 .copyright {
     float: left;
 }
