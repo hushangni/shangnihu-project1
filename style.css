@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* custom styles start here ***********/
 
 html {
-    font-size: 75%;
+    font-size: 64%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -269,9 +269,10 @@ li {
 }
 
 .itemsList li {
-    width: 50%;
+    width: calc(50% - 25px);
     float: left;
     margin-top: 20px;
+    margin-right: 25px;
     min-height: 110px;
     padding: 2px;
     position: relative;
@@ -425,17 +426,17 @@ li {
 }
 
 .angle i {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .leftAngle {
     top: 50%;
-    left: -5%;
+    left: -7%;
 }
 
 .rightAngle {
     top: 50%;
-    right: -5%;
+    right: -7%;
 }
 
 /* explore */
@@ -518,12 +519,13 @@ li {
 }
 
 .infoSection .wrapper h3 {
-    margin-top: 20px;;
+    margin-top: 30px;
 }
 
 .address h5 {
     font-size: 2.1em;
     margin: 4% 0;
+    margin-top: 80px;
 }
 
 .hawaii {
@@ -630,14 +632,6 @@ textarea {
     border: none;
     background: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.middleEmail {
-    /* border-bottom: 1px solid rgba(0, 0, 0, 1); */
-}
-
-.middleEmail::placeholder {
-    /* color: rgba(0, 0, 0, 1); */
 }
 
 .inTouchButton {
@@ -1083,11 +1077,11 @@ footer a {
 }
 
 /* added media query for font size on larger screens */
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1400px) {
     html {
         font-size: 64%;
     }
-}
+} */
 
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
